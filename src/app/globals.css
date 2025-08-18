@@ -1,9 +1,16 @@
+@import "antd/dist/reset.css";
+
 @import "tailwindcss";
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Geist+Sans&family=Geist+Mono&display=swap');
+
 :root {
-  font-family: var(--font-geist-sans), sans-serif;
+  --geist-sans: 'Geist Sans', sans-serif;
+  --geist-mono: 'Geist Mono', monospace;
 }
 
 body {
-  font-family: var(--font-geist-sans), var(--font-geist-mono), sans-serif;
+  font-family: var(--geist-sans), var(--geist-mono), sans-serif;
 }
