@@ -5,12 +5,12 @@ import GemImg from "../../public/assets/home/bluesapphire.png";
 export const Hero = () => {
   return (
     <section
-      className="w-screen min-h-screen flex flex-col md:flex-row items-center justify-center 
+      className="w-screen  min-h-screen flex flex-col md:flex-row items-center justify-center 
       px-6 py-12 bg-gradient-to-b from-white via-gray-100 to-gray-200"
     >
       {/* Left Text Content */}
       <div className="flex-1 flex flex-col items-center justify-center text-center md:text-center space-y-4 md:space-y-6">
-        <h1 className="mozilla-headline-main text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 drop-shadow-lg">
+        <h1 className="mozilla-headline-main text-4xl sm:text-5xl md:text-8xl font-bold text-gray-900 drop-shadow-lg">
           GEMS DE CEYLON
         </h1>
         <h2 className="mozilla-headline-main text-xl sm:text-2xl md:text-3xl font-medium text-gray-600">
