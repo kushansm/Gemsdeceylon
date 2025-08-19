@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import GemImg from "../../public/assets/aboutus/mining.jpg";
+import GemImg from "../../public/assets/aboutus/mining.png";
 import GemImg2 from "../../public/assets/aboutus/washing.jpg";
 import GemImg3 from "../../public/assets/aboutus/Blue-Sapphire.jpg";
 import GemImg4 from "../../public/assets/aboutus/cut.png";
