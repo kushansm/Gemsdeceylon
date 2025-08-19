@@ -11,10 +11,13 @@ export const Hero = () => {
       {/* Left Text Content */}
       <div className="flex-1 flex flex-col items-center justify-center text-center md:text-center space-y-4 md:space-y-6">
         <h1 className="mozilla-headline-main text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 drop-shadow-lg">
-          CEYLON SAPPHIRES
+          GEMS DE CEYLON
         </h1>
         <h2 className="mozilla-headline-main text-xl sm:text-2xl md:text-3xl font-medium text-gray-600">
-          EXQUISITE & TIMELESS
+          SAPPHIRES FROM THE SOURCE
+        </h2>
+        <h2 className="mozilla-headline-main text-xl sm:text-1xl md:text-2xl font-medium text-gray-600">
+          SINCE 1970
         </h2>
         <button className="px-8 py-4  bg-gray-400 text-white font-semibold rounded-xl shadow-xl hover:scale-105 transition transform">
           Shop Now
