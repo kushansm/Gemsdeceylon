@@ -14,3 +14,11 @@
 body {
   font-family: var(--geist-sans), var(--geist-mono), sans-serif;
 }
+
+.mozilla-headline-main {
+  font-family: "Mozilla Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
