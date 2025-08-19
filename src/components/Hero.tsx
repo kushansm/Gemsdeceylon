@@ -9,14 +9,14 @@ export const Hero = () => {
       px-6 py-12 bg-gradient-to-b from-white via-gray-100 to-gray-200"
     >
       {/* Left Text Content */}
-      <div className="flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left space-y-6">
-        <h1 className="mozilla-headline-main text-4xl md:text-7xl font-bold text-gray-900 drop-shadow-lg">
+      <div className="flex-1 flex flex-col items-center justify-center text-center md:text-center space-y-4 md:space-y-6">
+        <h1 className="mozilla-headline-main text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 drop-shadow-lg">
           CEYLON SAPPHIRES
         </h1>
-        <h2 className="mozilla-headline-main text-2xl md:text-3xl font-medium text-gray-600">
+        <h2 className="mozilla-headline-main text-xl sm:text-2xl md:text-3xl font-medium text-gray-600">
           EXQUISITE & TIMELESS
         </h2>
-        <button className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-xl shadow-xl hover:scale-105 transition">
+        <button className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-xl shadow-xl hover:scale-105 transition transform">
           Shop Now
         </button>
       </div>
