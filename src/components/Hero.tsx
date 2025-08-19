@@ -16,14 +16,14 @@ export const Hero = () => {
         <h2 className="mozilla-headline-main text-xl sm:text-2xl md:text-3xl font-medium text-gray-600">
           EXQUISITE & TIMELESS
         </h2>
-        <button className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-xl shadow-xl hover:scale-105 transition transform">
+        <button className="px-8 py-4  bg-gray-400 text-white font-semibold rounded-xl shadow-xl hover:scale-105 transition transform">
           Shop Now
         </button>
       </div>
 
       {/* Right Gem Image */}
       <div className="flex-1 flex justify-center items-center mt-10 md:mt-0 w-full">
-        <div className="relative w-full max-w-[500px] aspect-[4/3]">
+        <div className="relative w-full max-w-[800px] aspect-[4/3]">
           <Image
             src={GemImg}
             alt="Ceylon Sapphire"
