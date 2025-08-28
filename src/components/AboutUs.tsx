@@ -32,7 +32,7 @@ export const AboutUs = () => {
       <div className="flex-1 w-full flex items-center justify-center">
         <div className="w-full max-w-7xl flex flex-col md:flex-row items-center justify-center gap-12">
           {/* Text Content */}
-          <div className="flex-1 flex flex-col justify-center items-center space-y-6 text-center">
+          <div className="flex-1 flex flex-col justify-center items-center space-y-6 text-center px-2 md:px-0">
             <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
               Founded in <span className="font-semibold">1970</span>,{" "}
               <span className="font-semibold text-gray-800">Gems De Ceylon</span>{" "}
@@ -65,8 +65,8 @@ export const AboutUs = () => {
           </div>
 
           {/* Image Slider */}
-          <div className="flex-1 flex justify-center items-center">
-            <div className="w-full max-w-[600px] aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="flex-1 flex justify-center items-center w-full">
+            <div className="w-full md:max-w-[600px] aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 navigation
