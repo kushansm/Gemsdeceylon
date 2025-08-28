@@ -7,7 +7,7 @@ type NavLink = { name: string; href: string };
 
 const LINKS: NavLink[] = [
   { name: "Home", href: "#hero" },
-  { name: "GemCard", href: "#gemcard" },
+  { name: "About Us", href: "#aboutus" },
 ];
 
 const Navbar = () => {

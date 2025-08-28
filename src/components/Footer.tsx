@@ -5,10 +5,10 @@ export const Footer = () => {
   return (
     <footer className="bg-black text-white py-2">
       {/* Main Section */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start px-6 gap-6">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start px-6 gap-">
         {/* Company Info */}
         <div className="text-center md:text-left text-sm md:text-base leading-tight">
-          <h3 className="font-semibold text-lg">Ceylon Guide (Pvt) Ltd</h3>
+          <h3 className="font-semibold text-lg">Gems De Ceylon (pvt)Ltd</h3>
           <p>No.35,</p>
           <p>Sri Mahindarama Mawatha,</p>
           <p>Dandeniya,</p>
@@ -55,8 +55,11 @@ export const Footer = () => {
         </div>
       </div>
 
+      {/* Horizontal Line */}
+      <hr className="border-gray-800 my-4" />
+
       {/* Licence and Credits */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs md:text-sm mt-8 px-6 border-t border-gray-800 pt-4 gap-2 text-center">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs md:text-sm px-6 gap-2 text-center">
         <p>© 2025 Ceylon Guide. All rights reserved.</p>
         <p>Photos by Gems De Ceylon (Pvt) Ltd</p>
       </div>
