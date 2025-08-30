@@ -8,17 +8,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import GemImg from "../../public/assets/aboutus/mining.png";
-import GemImg2 from "../../public/assets/aboutus/washing.jpg";
-import GemImg3 from "../../public/assets/aboutus/Blue-Sapphire.jpg";
-import GemImg4 from "../../public/assets/aboutus/cut.png";
+import GemImg from "../../../public/assets/aboutus/mining.png";
+import GemImg2 from "../../../public/assets/aboutus/washing.jpg";
+import GemImg3 from "../../../public/assets/aboutus/Blue-Sapphire.jpg";
 
 export const AboutUs = () => {
   const images = [
     { src: GemImg, alt: "Gem Mining in Sri Lanka" },
     { src: GemImg2, alt: "Gem Washing Process" },
     { src: GemImg3, alt: "Blue Sapphire" },
-    { src: GemImg4, alt: "Gem Cutting" },
   ];
 
   return (

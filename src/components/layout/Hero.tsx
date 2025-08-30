@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import GemImg from "../../public/assets/home/bluesapphire.png";
+import GemImg from "../../../public/assets/home/bluesapphire.png";
 
 export const Hero = () => {
   return (
