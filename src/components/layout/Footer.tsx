@@ -24,7 +24,7 @@ export const Footer = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-black text-white tracking-widest uppercase leading-none underline decoration-yellow-500 decoration-4 underline-offset-8">Gems De Ceylon</span>
-              <span className="text-[10px] font-bold text-white/30 tracking-[0.5em] uppercase mt-2">Private Limited</span>
+              <span className="text-[10px] font-bold text-white/30 tracking-[0.5em] uppercase mt-4">Private Limited</span>
             </div>
           </Link>
           <p className="text-white/30 text-lg font-light leading-relaxed">
@@ -35,7 +35,7 @@ export const Footer = () => {
         </div>
 
         {/* Global Boutique Info */}
-        <div className="flex flex-col md:flex-row gap-16 lg:gap-32">
+        <div className="flex flex-col md:flex-row gap-16 lg:gap-32 items-start">
           <div className="space-y-6 text-center">
             <h4 className="text-white font-black text-[10px] uppercase tracking-[0.5em]">The Flagship</h4>
             <div className="w-full h-48 rounded-[2rem] overflow-hidden border border-white/10 group relative">
@@ -59,14 +59,11 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="space-y-8">
-            <h4 className="text-white font-black text-[10px] uppercase tracking-[0.5em]">Concierge</h4>
-            <div className="flex flex-col gap-4 text-white text-[11px] font-black uppercase tracking-widest">
-              <a href="#" className="hover:text-yellow-500 transition-colors">WhatsApp</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors">Instagram</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors">YouTube</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors">Email Us</a>
-            </div>
+          <div className="h-36 mt-7 flex flex-col justify-between">
+            <a href="https://wa.me/94713085242" target="_blank" rel="noopener noreferrer" className="text-white text-[11px] font-black uppercase tracking-widest hover:text-yellow-500 transition-colors">WhatsApp</a>
+            <a href="https://www.instagram.com/gems_de_ceylon/" target="_blank" rel="noopener noreferrer" className="text-white text-[11px] font-black uppercase tracking-widest hover:text-yellow-500 transition-colors">Instagram</a>
+            <a href="https://www.facebook.com/ceylongemsinternational/" target="_blank" rel="noopener noreferrer" className="text-white text-[11px] font-black uppercase tracking-widest hover:text-yellow-500 transition-colors">Facebook</a>
+            <a href="mailto:ceylongemsinternationalinfo@gmail.com" className="text-white text-[11px] font-black uppercase tracking-widest hover:text-yellow-500 transition-colors">Email Us</a>
           </div>
         </div>
       </div>
