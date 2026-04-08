@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import GemImg from "../../../public/assets/home/bluesapphire.png";
 
 export const Hero = () => {
@@ -19,9 +20,11 @@ export const Hero = () => {
         <h2 className="mozilla-headline-main text-xl sm:text-1xl md:text-2xl font-medium text-gray-600">
           SINCE 1970
         </h2>
-        <button className="px-8 py-4  bg-gray-400 text-white font-semibold rounded-xl shadow-xl hover:scale-105 transition transform">
-          Shop Now
-        </button>
+        <Link href="/shop">
+          <button className="px-8 py-4  bg-gray-400 text-white font-semibold rounded-xl shadow-xl hover:scale-105 transition transform">
+            Shop Now
+          </button>
+        </Link>
       </div>
 
       {/* Right Gem Image */}

@@ -6,8 +6,9 @@ import Image from "next/image";
 type NavLink = { name: string; href: string };
 
 const LINKS: NavLink[] = [
-  { name: "Home", href: "#hero" },
-  { name: "About Us", href: "#aboutus" },
+  { name: "Home", href: "/" },
+  { name: "Shop", href: "/shop" },
+  { name: "About Us", href: "/#aboutus" },
 ];
 
 const Navbar = () => {
