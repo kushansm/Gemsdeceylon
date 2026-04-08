@@ -47,15 +47,15 @@ export const Hero = () => {
 
         {/* Right Gem Image */}
         <div className={`flex-1 relative w-full transition-all duration-1000 delay-300 ${mounted ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
-          <div className="relative w-full aspect-square max-w-[900px]">
+          <div className="relative w-full aspect-square max-w-[600px] mx-auto">
             {/* Ambient Image Glow */}
-            <div className="absolute inset-0 bg-yellow-500/10 blur-[120px] rounded-full scale-75 animate-pulse" />
+            <div className="absolute inset-0 bg-yellow-500/10 blur-[100px] rounded-full scale-75 animate-pulse" />
 
             <Image
               src={GemImg}
               alt="Ceylon Sapphire"
               fill
-              className="object-contain drop-shadow-[0_0_100px_rgba(255,255,255,0.1)] relative z-10"
+              className="object-contain drop-shadow-[0_0_80px_rgba(255,255,255,0.08)] relative z-10"
               priority
             />
           </div>

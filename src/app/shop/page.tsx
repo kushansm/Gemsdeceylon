@@ -137,16 +137,11 @@ export default function Page() {
             </div>
 
             {/* Footer Branding - Bold White */}
-            <div className="px-8 lg:px-16 py-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-12 text-[12px] font-black text-white uppercase tracking-[0.8em]">
-                <div className="flex gap-16">
-                    <span>Exclusive Source</span>
-                    <span>Premium Grade</span>
-                </div>
-                <span className="opacity-40 font-medium tracking-widest lowercase">gems de ceylon boutique</span>
-                <div className="flex gap-16">
-                    <span className="hover:text-yellow-500 cursor-pointer transition-colors">Instagram</span>
-                    <span className="hover:text-yellow-500 cursor-pointer transition-colors">WhatsApp</span>
-                </div>
+            <div className="px-8 lg:px-16 py-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-12 text-[11px] font-black text-white uppercase tracking-[0.8em]">
+                <span>Exclusive Source</span>
+                <span>Premium Grade</span>
+                <span>Gems De Ceylon</span>
+                <span>© 2019</span>
             </div>
         </main>
     );
