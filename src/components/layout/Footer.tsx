@@ -36,11 +36,11 @@ export const Footer = () => {
 
         {/* Global Boutique Info */}
         <div className="flex flex-col md:flex-row gap-16 lg:gap-32">
-          <div className="space-y-6">
+          <div className="space-y-6 text-center">
             <h4 className="text-white font-black text-[10px] uppercase tracking-[0.5em]">The Flagship</h4>
             <div className="w-full h-48 rounded-[2rem] overflow-hidden border border-white/10 group relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15847.28!2d80.6600!3d6.4600!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae40d000000001%3A0x1!2sOpanayaka%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1"
+                src="https://maps.google.com/maps?q=6.4600,80.6600&z=15&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(0.5)' }}
@@ -49,7 +49,7 @@ export const Footer = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
               <a
-                href="https://share.google/GW4ca11wBNg4nob9I"
+                href="https://maps.app.goo.gl/BAmSVNotfsk6JwGM8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute inset-0 z-10 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[10px] font-black text-white uppercase tracking-widest backdrop-blur-sm"
