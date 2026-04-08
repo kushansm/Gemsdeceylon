@@ -12,8 +12,8 @@ export const Footer = () => {
       <div className="max-w-[1600px] mx-auto pt-32 pb-24 px-8 lg:px-16 flex flex-col lg:flex-row justify-between gap-16 lg:gap-32">
 
         {/* Brand Soul */}
-        <div className="flex-1 max-w-xl">
-          <Link href="/" className="flex items-center gap-4 mb-10 group">
+        <div className="flex flex-col items-center text-center">
+          <Link href="/" className="flex items-center gap-4 mb-16 group">
             <div className="relative w-16 h-16 transition-transform group-hover:scale-110">
               <Image
                 src={Logo}
@@ -22,16 +22,26 @@ export const Footer = () => {
                 className="object-contain"
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col text-left">
               <span className="text-2xl font-black text-white tracking-widest uppercase leading-none underline decoration-yellow-500 decoration-4 underline-offset-8">Gems De Ceylon</span>
               <span className="text-[10px] font-bold text-white/30 tracking-[0.5em] uppercase mt-4">Private Limited</span>
             </div>
           </Link>
-          <p className="text-white/30 text-lg font-light leading-relaxed">
-            From deep within Sri Lanka’s earth to the heights of global luxury,
-            Gems De Ceylon preserves the legacy of authentic mining and
-            precision cutting.
-          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 max-w-3xl">
+            <div className="space-y-4">
+              <h4 className="text-white font-black text-[11px] uppercase tracking-[0.6em]">Integrity</h4>
+              <p className="text-white/30 text-sm font-light leading-relaxed uppercase tracking-widest">
+                Direct mining, no middlemen,<br />total transparency.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h4 className="text-white font-black text-[11px] uppercase tracking-[0.6em]">Mastery</h4>
+              <p className="text-white/30 text-sm font-light leading-relaxed uppercase tracking-widest">
+                Precision cutting that honors<br />the stone's soul.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Global Boutique Info */}

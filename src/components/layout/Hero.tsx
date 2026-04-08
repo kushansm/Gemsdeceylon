@@ -66,7 +66,7 @@ export const Hero = () => {
       </div>
 
       {/* Brand Heritage Indicators */}
-      <div className="absolute bottom-12 left-0 w-full z-20 px-8 lg:px-16 grid grid-cols-2 md:flex md:justify-between items-end gap-y-8 md:gap-0 opacity-20 select-none pointer-events-none">
+      <div className="absolute bottom-12 left-0 w-full z-20 px-8 lg:px-16 grid grid-cols-2 md:flex md:justify-between items-end gap-y-8 md:gap-0 opacity-70 select-none pointer-events-none">
         {[
           "Ethically Mined",
           "Fair Trade",
@@ -75,8 +75,8 @@ export const Hero = () => {
           "Story Documentary"
         ].map((text) => (
           <div key={text} className="flex flex-col items-center gap-4">
-            <span className="text-[7px] lg:text-[8px] font-black uppercase tracking-[0.3em] lg:tracking-[0.5em] text-white whitespace-nowrap">{text}</span>
-            <div className="w-px h-6 lg:h-12 bg-gradient-to-b from-white to-transparent" />
+            <span className="text-[8px] lg:text-[10px] font-black uppercase tracking-[0.3em] lg:tracking-[0.5em] text-white whitespace-nowrap">{text}</span>
+            <div className="w-px h-6 lg:h-12 bg-gradient-to-b from-white to-transparent opacity-50" />
           </div>
         ))}
       </div>
