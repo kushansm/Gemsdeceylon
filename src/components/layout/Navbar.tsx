@@ -45,8 +45,8 @@ const Navbar = () => {
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-lg lg:text-2xl font-black text-white tracking-widest uppercase leading-none">Gems De <span className="text-yellow-500">Ceylon</span></span>
-            <span className="text-[10px] font-bold text-white/30 tracking-[0.4em] uppercase mt-3">Private Limited</span>
+            <span className="text-base lg:text-2xl font-black text-white tracking-widest uppercase leading-none">Gems De <span className="text-yellow-500">Ceylon</span></span>
+            <span className="text-[8px] lg:text-[10px] font-bold text-white/30 tracking-[0.4em] uppercase mt-2 lg:mt-3">Private Limited</span>
           </div>
         </Link>
 

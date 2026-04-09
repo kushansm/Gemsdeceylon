@@ -43,7 +43,7 @@ export const GemCard = ({ gem }: GemCardProps) => {
                     </span>
                 </div>
 
-                <h3 className="text-2xl font-black text-white mb-6 group-hover:text-yellow-600 transition-colors tracking-tighter leading-none">
+                <h3 className="text-xl lg:text-2xl font-black text-white mb-6 group-hover:text-yellow-600 transition-colors tracking-tighter leading-none">
                     {gem.name}
                 </h3>
 
@@ -55,7 +55,7 @@ export const GemCard = ({ gem }: GemCardProps) => {
                 <div className="mt-auto flex items-end justify-between border-t border-white/5 pt-8">
                     <div className="flex flex-col">
                         <span className="text-[8px] text-white/20 font-black uppercase tracking-[0.5em] mb-1">Value</span>
-                        <span className="text-3xl font-black text-white tracking-tighter">${gem.price.toLocaleString()}</span>
+                        <span className="text-2xl lg:text-3xl font-black text-white tracking-tighter">${gem.price.toLocaleString()}</span>
                     </div>
                     <button className="w-14 h-14 rounded-full bg-white flex items-center justify-center text-black hover:bg-yellow-500 transition-all duration-500 shadow-2xl shadow-white/5 group-hover:scale-110">
                         <span className="text-2xl">→</span>

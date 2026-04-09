@@ -71,7 +71,7 @@ export default function Page() {
                                 <span className="text-yellow-500 font-bold uppercase tracking-[0.8em] text-[10px]">Ceylon Boutique</span>
                                 <div className="h-[1px] w-12 bg-yellow-500/20" />
                             </div>
-                            <h1 className="mozilla-headline-main text-5xl lg:text-9xl font-black tracking-tighter leading-none mb-6 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
+                            <h1 className="mozilla-headline-main text-4xl lg:text-9xl font-black tracking-tighter leading-none mb-6 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent text-center">
                                 {viewMode === "collections" ? "The Master Collection" : (selectedCategory === "All" ? "The Full Library" : selectedCategory)}
                             </h1>
                             <p className="text-[10px] lg:text-[11px] text-white/30 font-medium max-w-2xl uppercase tracking-[0.4em] leading-relaxed">
@@ -137,7 +137,7 @@ export default function Page() {
             </div>
 
             {/* Footer Branding - Bold White */}
-            <div className="px-8 lg:px-16 py-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-12 text-[11px] font-black text-white uppercase tracking-[0.8em]">
+            <div className="px-8 lg:px-16 py-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-12 text-[10px] lg:text-[11px] font-black text-white uppercase tracking-[0.4em] lg:tracking-[0.8em]">
                 <span>Exclusive Source</span>
                 <span>Premium Grade</span>
                 <span>Gems De Ceylon</span>

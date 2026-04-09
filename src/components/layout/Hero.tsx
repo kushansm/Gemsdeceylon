@@ -27,11 +27,11 @@ export const Hero = () => {
             <span className="text-yellow-500 font-bold uppercase tracking-[0.8em] text-[10px]">Pure Legacy since 1970</span>
           </div>
 
-          <h1 className="mozilla-headline-main text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] tracking-tighter mb-8">
+          <h1 className="mozilla-headline-main text-4xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] tracking-tighter mb-8">
             GEMS DE <br /> <span className="bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent">CEYLON</span>
           </h1>
 
-          <p className="text-lg md:text-2xl text-white/40 font-light max-w-xl leading-relaxed mb-12 uppercase tracking-[0.2em]">
+          <p className="text-base md:text-2xl text-white/40 font-light max-w-xl leading-relaxed mb-12 uppercase tracking-[0.2em]">
             Sapphires from the source. <br />
             <span className="text-white/20">Where nature meets master craftsmanship.</span>
           </p>
@@ -74,9 +74,9 @@ export const Hero = () => {
           "Expertly Cut",
           "Story Documentary"
         ].map((text) => (
-          <div key={text} className="flex flex-col items-center gap-4">
-            <span className="text-[8px] lg:text-[10px] font-black uppercase tracking-[0.3em] lg:tracking-[0.5em] text-white whitespace-nowrap">{text}</span>
-            <div className="w-px h-6 lg:h-12 bg-gradient-to-b from-white to-transparent opacity-50" />
+          <div key={text} className="flex flex-col items-center gap-2 md:gap-4">
+            <span className="text-[7px] lg:text-[10px] font-black uppercase tracking-[0.2em] lg:tracking-[0.5em] text-white text-center">{text}</span>
+            <div className="w-px h-4 lg:h-12 bg-gradient-to-b from-white to-transparent opacity-50" />
           </div>
         ))}
       </div>

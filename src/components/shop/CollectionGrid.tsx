@@ -35,8 +35,8 @@ export const CollectionGrid = ({ onSelectCategory }: CollectionGridProps) => {
                         key={item}
                         onClick={() => onSelectCategory(category)}
                         className={`group relative overflow-hidden aspect-[1.1/1] rounded-[3rem] transition-all duration-700 hover:shadow-[0_0_80px_rgba(234,179,8,0.12)] flex flex-col items-center justify-center p-6 ${isAll
-                                ? "bg-gradient-to-br from-[#111111] to-black border border-yellow-500/30 shadow-2xl scale-[1.02]"
-                                : "bg-[#0D0D0D] border border-white/5 hover:border-white/10"
+                            ? "bg-gradient-to-br from-[#111111] to-black border border-yellow-500/30 shadow-2xl scale-[1.02]"
+                            : "bg-[#0D0D0D] border border-white/5 hover:border-white/10"
                             }`}
                     >
                         {/* Background Image Container - Compact & Prominent */}
@@ -58,7 +58,7 @@ export const CollectionGrid = ({ onSelectCategory }: CollectionGridProps) => {
                             <span className={`text-[9px] font-black uppercase tracking-[0.5em] mb-2 transition-colors ${isAll ? "text-yellow-500" : "text-white/20 group-hover:text-yellow-500/50"}`}>
                                 {isAll ? "Masterpiece Library" : "Pure Sourced Collection"}
                             </span>
-                            <h3 className={`text-2xl lg:text-3xl font-black tracking-tighter transition-colors ${isAll ? "text-white" : "text-white/80 group-hover:text-white"}`}>
+                            <h3 className={`text-xl lg:text-3xl font-black tracking-tighter transition-colors ${isAll ? "text-white" : "text-white/80 group-hover:text-white"}`}>
                                 {item}
                             </h3>
 
