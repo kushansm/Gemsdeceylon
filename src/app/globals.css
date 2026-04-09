@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist+Sans&family=Geist+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Mozilla+Headline:wght@200..700&display=swap');
 @import "antd/dist/reset.css";
 @import "tailwindcss";
 
 :root {
-  --geist-sans: 'Geist Sans', sans-serif;
-  --geist-mono: 'Geist Mono', monospace;
+  --geist-sans: var(--font-geist-sans), sans-serif;
+  --geist-mono: var(--font-geist-mono), monospace;
 }
 
 body {
-  font-family: var(--geist-sans), var(--geist-mono), sans-serif;
+  font-family: var(--geist-sans);
 }
 
 .mozilla-headline-main {
