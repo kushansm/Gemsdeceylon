@@ -1,6 +1,6 @@
-@import "antd/dist/reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Geist+Sans&family=Geist+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gidole&family=Mozilla+Headline:wght@200..700&display=swap');
+@import "antd/dist/reset.css";
 @import "tailwindcss";
 
 :root {
@@ -15,7 +15,7 @@ body {
 .mozilla-headline-main {
   font-family: "Mozilla Headline", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400; 
+  font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
