@@ -38,7 +38,7 @@ export const Footer = () => {
             <div className="space-y-4">
               <h4 className="text-white font-black text-[11px] uppercase tracking-[0.6em]">Mastery</h4>
               <p className="text-white/30 text-sm font-light leading-relaxed uppercase tracking-widest">
-                Precision cutting that honors<br />the stone's soul.
+                Precision cutting that honors<br />the stone&apos;s soul.
               </p>
             </div>
           </div>
