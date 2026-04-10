@@ -13,7 +13,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-screen h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0A0A0A]">
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-x-hidden bg-[#0A0A0A] py-32 md:py-0">
       {/* Immersive Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(234,179,8,0.05),transparent_70%)] pointer-events-none" />
       <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_bottom,transparent,#0A0A0A)] z-10" />
@@ -47,7 +47,7 @@ export const Hero = () => {
 
         {/* Right Gem Image */}
         <div className={`flex-1 relative w-full transition-all duration-1000 delay-300 ${mounted ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
-          <div className="relative w-full aspect-square max-w-[600px] mx-auto">
+          <div className="relative w-full aspect-square max-w-[300px] md:max-w-[600px] mx-auto">
             {/* Ambient Image Glow */}
             <div className="absolute inset-0 bg-yellow-500/10 blur-[100px] rounded-full scale-75 animate-pulse" />
 
@@ -65,8 +65,8 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Brand Heritage Indicators */}
-      <div className="absolute bottom-12 left-0 w-full z-20 px-8 lg:px-16 grid grid-cols-2 md:flex md:justify-between items-end gap-y-8 md:gap-0 opacity-70 select-none pointer-events-none">
+      {/* Brand Heritage Indicators - Scrollable/Stackable on mobile */}
+      <div className="relative md:absolute bottom-0 md:bottom-12 left-0 w-full z-20 px-8 lg:px-16 mt-20 md:mt-0 grid grid-cols-2 md:flex md:justify-between items-end gap-y-12 md:gap-0 opacity-70 select-none pointer-events-none pb-20 md:pb-0">
         {[
           "Ethically Mined",
           "Fair Trade",

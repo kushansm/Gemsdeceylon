@@ -14,6 +14,7 @@ const LINKS: NavLink[] = [
   { name: "Home", href: "/" },
   { name: "Shop", href: "/shop" },
   { name: "About Us", href: "/#aboutus" },
+  { name: "Blog", href: "/#blog" },
 ];
 
 const Navbar = () => {
@@ -73,27 +74,37 @@ const Navbar = () => {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5"
+          className="md:hidden w-12 h-12 flex flex-col items-center justify-center gap-2 relative z-[70]"
+          aria-label="Toggle Menu"
         >
-          <div className={`w-8 h-[1px] bg-white transition-all ${isMobileMenuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <div className={`w-8 h-[1px] bg-white transition-all ${isMobileMenuOpen ? "opacity-0" : ""}`} />
-          <div className={`w-8 h-[1px] bg-white transition-all ${isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <div className={`w-8 h-[2px] bg-white transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-2.5" : ""}`} />
+          <div className={`w-8 h-[2px] bg-white transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : ""}`} />
+          <div className={`w-8 h-[2px] bg-white transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-2.5" : ""}`} />
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      <div className={`fixed inset-0 bg-[#0A0A0A] flex flex-col items-center justify-center gap-10 transition-transform duration-700 z-[60] ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
-        <button onClick={() => setIsMobileMenuOpen(false)} className="absolute top-10 right-10 text-4xl text-white">×</button>
-        {LINKS.map((link) => (
+      {/* Mobile Menu - Glassy Appearance */}
+      <div className={`fixed inset-0 bg-[#0A0A0A]/40 backdrop-blur-2xl flex flex-col items-center justify-center gap-12 transition-all duration-700 z-[60] ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
+        {/* Subtle decorative glow */}
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent" />
+
+        {LINKS.map((link, index) => (
           <Link
             key={link.name}
             href={link.href}
             onClick={() => setIsMobileMenuOpen(false)}
-            className="text-4xl font-black text-white uppercase tracking-tighter hover:text-yellow-500 transition-all"
+            className={`text-5xl font-black text-white uppercase tracking-tighter hover:text-yellow-500 transition-all transform ${isMobileMenuOpen ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+            style={{ transitionDelay: `${index * 100}ms` }}
           >
             {link.name}
           </Link>
         ))}
+        <Link href="/shop" onClick={() => setIsMobileMenuOpen(false)}>
+          <button className={`mt-8 px-12 py-5 bg-white text-black font-black text-xs uppercase tracking-[0.4em] rounded-full hover:bg-yellow-500 transition-all transform ${isMobileMenuOpen ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+            style={{ transitionDelay: `${LINKS.length * 100}ms` }}>
+            Explore Boutique
+          </button>
+        </Link>
       </div>
     </nav>
   );
