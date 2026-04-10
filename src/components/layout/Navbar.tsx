@@ -15,6 +15,7 @@ const LINKS: NavLink[] = [
   { name: "Shop", href: "/shop" },
   { name: "About Us", href: "/#aboutus" },
   { name: "Blog", href: "/#blog" },
+  { name: "Inquiry", href: "/#requirement" },
 ];
 
 const Navbar = () => {
@@ -123,6 +124,7 @@ const Navbar = () => {
                     {link.name === "Shop" && <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />}
                     {link.name === "About Us" && <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />}
                     {link.name === "Blog" && <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />}
+                    {link.name === "Inquiry" && <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />}
                   </svg>
                 </div>
                 <span className="text-sm font-medium text-white/60 group-hover:text-white transition-colors tracking-tight">
