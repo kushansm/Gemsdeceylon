@@ -14,18 +14,22 @@ export const Footer = () => {
         {/* Brand Soul */}
         <div className="flex flex-col items-center text-center">
           <Link href="/" className="flex items-center gap-4 mb-16 group">
-            <div className="relative w-16 h-16 transition-transform group-hover:scale-110">
+            <div className="relative w-12 h-12 lg:w-16 lg:h-16 transition-transform group-hover:scale-110">
               <Image
                 src={Logo}
                 alt="Gems De Ceylon Logo"
                 fill
                 className="object-contain"
-                sizes="64px"
+                sizes="(max-width: 1024px) 48px, 64px"
               />
             </div>
             <div className="flex flex-col text-left">
-              <span className="text-2xl font-black text-white tracking-widest uppercase leading-none underline decoration-yellow-500 decoration-4 underline-offset-8">Gems De Ceylon</span>
-              <span className="text-[10px] font-bold text-white/30 tracking-[0.5em] uppercase mt-4">Private Limited</span>
+              <span className="text-xl lg:text-2xl font-black text-white tracking-widest uppercase leading-tight">
+                Gems De <span className="text-yellow-500">Ceylon</span>
+              </span>
+              <span className="text-[8px] lg:text-[10px] font-bold text-white/30 tracking-[0.4em] uppercase mt-2">
+                Private Limited
+              </span>
             </div>
           </Link>
 
