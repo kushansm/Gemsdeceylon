@@ -43,6 +43,7 @@ const Navbar = () => {
               alt="Gems De Ceylon Logo"
               fill
               className="object-contain"
+              sizes="(max-width: 1024px) 48px, 64px"
             />
           </div>
           <div className="flex flex-col">
@@ -74,37 +75,80 @@ const Navbar = () => {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden w-12 h-12 flex flex-col items-center justify-center gap-2 relative z-[70]"
+          className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 relative z-[100] bg-white/5 backdrop-blur-md border border-white/10 rounded-xl hover:bg-white/10 transition-colors"
           aria-label="Toggle Menu"
         >
-          <div className={`w-8 h-[2px] bg-white transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-2.5" : ""}`} />
-          <div className={`w-8 h-[2px] bg-white transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : ""}`} />
-          <div className={`w-8 h-[2px] bg-white transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-2.5" : ""}`} />
+          <div className={`w-5 h-[1.5px] bg-white transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <div className={`w-5 h-[1.5px] bg-white transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : ""}`} />
+          <div className={`w-5 h-[1.5px] bg-white transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
-      {/* Mobile Menu - Glassy Appearance */}
-      <div className={`fixed inset-0 bg-[#0A0A0A]/40 backdrop-blur-2xl flex flex-col items-center justify-center gap-12 transition-all duration-700 z-[60] ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
-        {/* Subtle decorative glow */}
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent" />
+      {/* Modern Glassmorphism Mobile Menu */}
+      <div
+        className={`fixed inset-0 z-[80] transition-all duration-500 ${isMobileMenuOpen ? "visible" : "invisible"}`}
+      >
+        {/* Backdrop overlay with blur */}
+        <div
+          className={`absolute inset-0 bg-[#0A0A0A]/40 backdrop-blur-sm transition-opacity duration-500 ${isMobileMenuOpen ? "opacity-100" : "opacity-0"}`}
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
 
-        {LINKS.map((link, index) => (
-          <Link
-            key={link.name}
-            href={link.href}
-            onClick={() => setIsMobileMenuOpen(false)}
-            className={`text-5xl font-black text-white uppercase tracking-tighter hover:text-yellow-500 transition-all transform ${isMobileMenuOpen ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
-            style={{ transitionDelay: `${index * 100}ms` }}
-          >
-            {link.name}
-          </Link>
-        ))}
-        <Link href="/shop" onClick={() => setIsMobileMenuOpen(false)}>
-          <button className={`mt-8 px-12 py-5 bg-white text-black font-black text-xs uppercase tracking-[0.4em] rounded-full hover:bg-yellow-500 transition-all transform ${isMobileMenuOpen ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
-            style={{ transitionDelay: `${LINKS.length * 100}ms` }}>
-            Explore Boutique
-          </button>
-        </Link>
+        {/* Menu Panel */}
+        <div
+          className={`absolute top-0 right-0 h-full w-[280px] bg-black/40 backdrop-blur-2xl border-l border-white/5 shadow-2xl flex flex-col pt-32 px-8 transition-transform duration-500 ease-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+        >
+          <div className="flex flex-col gap-2">
+            <span className="text-[10px] font-bold text-white/20 uppercase tracking-[0.4em] mb-4">Navigations</span>
+
+            {LINKS.map((link, index) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`group flex items-center gap-4 py-4 px-5 rounded-2xl hover:bg-white/5 border border-transparent hover:border-white/5 transition-all duration-300 transform ${isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-12 opacity-0"}`}
+                style={{ transitionDelay: `${index * 50 + 200}ms` }}
+              >
+                <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-yellow-500/10 transition-colors duration-300">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-4 h-4 text-white/40 group-hover:text-yellow-500 transition-colors duration-300"
+                  >
+                    {link.name === "Home" && <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />}
+                    {link.name === "Shop" && <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />}
+                    {link.name === "About Us" && <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />}
+                    {link.name === "Blog" && <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />}
+                  </svg>
+                </div>
+                <span className="text-sm font-medium text-white/60 group-hover:text-white transition-colors tracking-tight">
+                  {link.name}
+                </span>
+                <span className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-yellow-500 text-xs">→</span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-auto mb-10 space-y-8">
+            <div className="h-px bg-white/5 w-full" />
+            <Link href="/shop" onClick={() => setIsMobileMenuOpen(false)}>
+              <button className={`w-full py-5 bg-white text-black font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-yellow-500 transition-all shadow-xl shadow-white/5 transform ${isMobileMenuOpen ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+                style={{ transitionDelay: `${LINKS.length * 50 + 300}ms` }}>
+                Explore Boutique
+              </button>
+            </Link>
+
+            <div className={`flex flex-col gap-2 transform ${isMobileMenuOpen ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+              style={{ transitionDelay: `${LINKS.length * 50 + 400}ms` }}>
+              <span className="text-[8px] font-bold text-white/10 uppercase tracking-[0.3em]">Exotic Gem Mining Since 1970</span>
+              <span className="text-[8px] font-bold text-white/10 uppercase tracking-[0.3em]">SRI LANKA</span>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   );

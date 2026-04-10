@@ -59,6 +59,7 @@ export const AboutUs = () => {
                         fill
                         className="object-cover"
                         priority={index === 0}
+                        sizes="(max-width: 1024px) 100vw, 600px"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                     </div>

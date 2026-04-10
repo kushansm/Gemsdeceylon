@@ -47,6 +47,7 @@ export const CollectionGrid = ({ onSelectCategory }: CollectionGridProps) => {
                                 fill
                                 className={`object-contain transition-all duration-1000 group-hover:scale-110 ${isAll ? "opacity-90 p-2" : "p-0"}`}
                                 priority
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
 
                             {/* Subtle ambient glow */}

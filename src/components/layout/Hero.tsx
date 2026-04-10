@@ -57,6 +57,7 @@ export const Hero = () => {
               fill
               className="object-contain drop-shadow-[0_0_80px_rgba(255,255,255,0.08)] relative z-10"
               priority
+              sizes="(max-width: 768px) 300px, 600px"
             />
           </div>
 

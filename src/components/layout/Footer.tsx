@@ -20,6 +20,7 @@ export const Footer = () => {
                 alt="Gems De Ceylon Logo"
                 fill
                 className="object-contain"
+                sizes="64px"
               />
             </div>
             <div className="flex flex-col text-left">

@@ -53,6 +53,7 @@ export default function BlogDetailPage({ params }: { params: Promise<{ slug: str
                                 fill
                                 className="object-cover transition-transform duration-[2000ms] hover:scale-105"
                                 priority
+                                sizes="(max-width: 1024px) 100vw, 1200px"
                             />
                         </div>
                     </div>
