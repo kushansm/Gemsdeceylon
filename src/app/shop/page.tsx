@@ -7,10 +7,14 @@ import { ShopList } from "@/components/shop/ShopList";
 import { CollectionGrid } from "@/components/shop/CollectionGrid";
 import { MOCK_GEMS } from "@/lib/data";
 import { Category } from "@/types/gem";
+import { useSearchParams } from "next/navigation";
+import { CATEGORIES } from "@/lib/data";
+import { Suspense } from "react";
 
 type ViewMode = "collections" | "products";
 
-export default function Page() {
+function ShopContent() {
+    const searchParams = useSearchParams();
     const [viewMode, setViewMode] = useState<ViewMode>("collections");
     const [selectedCategory, setSelectedCategory] = useState<Category | "All" | null>(null);
     const [selectedCategories, setSelectedCategories] = useState<Category[]>([]);
@@ -22,7 +26,20 @@ export default function Page() {
 
     useEffect(() => {
         setMounted(true);
-    }, []);
+
+        const categoryParam = searchParams.get("category");
+        if (categoryParam) {
+            if (categoryParam === "All") {
+                setSelectedCategory("All");
+                setSelectedCategories([]);
+                setViewMode("products");
+            } else if (CATEGORIES.includes(categoryParam as any)) {
+                setSelectedCategory(categoryParam as Category);
+                setSelectedCategories([categoryParam as Category]);
+                setViewMode("products");
+            }
+        }
+    }, [searchParams]);
 
     const handleSelectCategory = (category: Category | "All") => {
         setSelectedCategory(category);
@@ -144,5 +161,13 @@ export default function Page() {
                 <span>© 2019</span>
             </div>
         </main>
+    );
+}
+
+export default function Page() {
+    return (
+        <Suspense fallback={<div>Loading shop...</div>}>
+            <ShopContent />
+        </Suspense>
     );
 }

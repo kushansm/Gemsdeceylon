@@ -1,4 +1,5 @@
 import { AboutUs } from "@/components/sections/AboutUs";
+import { GemShopSection } from "@/components/sections/GemShopSection";
 import { BlogSection } from "@/components/sections/BlogSection";
 import { CustomerRequirement } from "@/components/sections/CustomerRequirement";
 import { Footer } from "@/components/layout/Footer";
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <AboutUs />
+      <GemShopSection />
       <BlogSection />
       <CustomerRequirement />
       <Footer />

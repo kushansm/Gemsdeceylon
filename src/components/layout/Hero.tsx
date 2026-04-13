@@ -73,7 +73,6 @@ export const Hero = () => {
           "Fair Trade",
           "Trust Worthy",
           "Expertly Cut",
-          "Story Documentary"
         ].map((text) => (
           <div key={text} className="flex flex-col items-center gap-2 md:gap-4">
             <span className="text-[7px] lg:text-[10px] font-black uppercase tracking-[0.2em] lg:tracking-[0.5em] text-white text-center">{text}</span>

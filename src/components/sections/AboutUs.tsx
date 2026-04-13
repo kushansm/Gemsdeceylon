@@ -69,7 +69,7 @@ export const AboutUs = () => {
             </div>
 
             {/* Custom Navigation */}
-            <div className="absolute -bottom-6 -right-6 flex gap-4 z-20">
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 flex gap-4 z-20">
               <button className="swiper-button-prev-custom w-14 h-14 rounded-full bg-white text-black flex items-center justify-center shadow-2xl hover:bg-yellow-500 transition-colors">←</button>
               <button className="swiper-button-next-custom w-14 h-14 rounded-full bg-white text-black flex items-center justify-center shadow-2xl hover:bg-yellow-500 transition-colors">→</button>
             </div>
